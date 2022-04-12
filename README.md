@@ -1,2 +1,1 @@
-# goit-murkap-hw-95
-5е задание
+# goit-murkap-hw-94
