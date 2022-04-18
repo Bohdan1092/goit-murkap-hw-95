@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto+Serif:wght@500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
                     <span class="logo-first-color">Web</span><span class="logo-second-color">Studio</span>    
                     </a>
                     <ul class="list-nav">
-                        <li class="item"><a class="list-link" href="">Студия</a></li>
+                        <li class="item"><a class="list-link crouven" href="">Студия</a></li>
                         <li class="item"><a class="list-link" href="./portfolio.html">Портфолио</a></li>
                         <li class="item"><a class="list-link" href="./contact.html">Контакты</a></li>
                     </ul>
@@ -38,18 +39,28 @@
                 </ul>
         </div>
     </header>
-    
+
 <main>
       <!--герой-->
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+            <h2>Model222</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis esse labore dolorem excepturi culpa recusandae porro corporis libero, qui impedit.</p>
+            <button data-close-model>
+                Закрыть
+            </button>
+        </div>
+    </div>
         <section class="section-huro">
             <div class="conteiner">
                 <div class="huro">
                     <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="button">Заказать услугу</button> 
+                    <button type="button" class="button" data-open-model>Заказать услугу</button> 
                 </div>
             </div>
-         
+        
         </section>
+        
         <!--маленькая секция-->
         <section class="section-small">
             <h2 class="impotent">Эффективные решения</h2>
@@ -77,9 +88,20 @@
             <div class="conteiner">
             <h2 class="title">Чем мы занимаемся</h2>
             <div class="fotos-item">
-                <img class="fotos-icon" src="./images/box1.jpg"  alt="компьютер" width="370"> 
-                <img class="fotos-icon" src="./images/box2.jpg" alt="ноут" width="370">
-                <img class="fotos-icon" src="./images/box3.jpg" alt="планшет" width="370" >
+                <ul class="title-fotos">
+                    <li class="fotos-icon"><img  src="./images/box1.jpg"  alt="компьютер" width="370">
+                    <p class="text-fotos">Десктопные приложения</p>
+                    </li>
+                    <li class="fotos-icon"><img  src="./images/box2.jpg" alt="ноут" width="370">
+                        <p class="text-fotos">Мобильные приложения</p>
+                    </li>
+                    <li class="fotos-icon"><img  src="./images/box3.jpg" alt="планшет" width="370" >
+                    <p class="text-fotos">Дизайнерские решения</p>
+                    </li>
+                </ul>
+             
+                
+                
             </div>
              </div>
         </section>
@@ -200,7 +222,9 @@
                     </ul>
                 </li>
                 <li class="icon-team">
-                    <img src="./images/img4.jpg" alt="михаил" width="370">
+                    <div class="thoim">
+                        
+                    </div><img src="./images/img4.jpg" alt="михаил" width="370">
                     <div class="conteiner-second">
                         <h3 class="name">Михаил Ермаков</h3>
                         <p class="name-proffesion">UI Designer</p>
@@ -287,7 +311,7 @@
 
     <footer class="footer">
         <div class="conteiner foot">
-            <div class="conteiner-three">
+            <div class="conteiner-three wight">
                 <div class="footer-logo">
                     <a class="logo" href="./index.html" lang="en"><span class="logo-first-color">Web</span><span class="logo-second-color">Studio</span></a>
                 </div>
@@ -301,7 +325,7 @@
                 <li class="footer-item"><a class="inform" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
             </div>
-            <div class="footer-icon">
+            <div class="footer-icon wight">
                 <section class="section-footer">
                     <h3 class="title">ПРИСОЕДИНЯЙТЕСЬ</h3>
                     <ul class="title-team">
@@ -338,6 +362,6 @@
             </div>
         </div>
     </footer>
-    
+<script src="./js/model.js"></script>
 </body>
 </html>
