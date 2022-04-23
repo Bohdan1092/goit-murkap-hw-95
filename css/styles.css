@@ -179,9 +179,7 @@ padding: 5px; */
 display: flex;
 align-items: center;
 justify-content: center;
-transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+transition:color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .list-mail {
@@ -273,11 +271,15 @@ letter-spacing: 0.06em;
     position: absolute;
     top: 0;
     right: 0;
- width: 20px;
- height: 20px;
- display: block;
- text-align: center;
+ width: 30px;
+ height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
  cursor: pointer;
+ border-radius: 50%;
+ margin-right: 8px;
+ margin-top: 8px;
 
 }
 .backdrop {
@@ -286,7 +288,7 @@ letter-spacing: 0.06em;
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(48, 49, 49, 0.425);
+    background-color: rgba(0, 0, 0, 0.20);
     
 }
 .backdrop.is-hidden {
@@ -304,7 +306,8 @@ letter-spacing: 0.06em;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.button-span {
+.button-modal {
+    border-radius: 50px;
     display: flex;
     justify-content: center;
 }
@@ -574,6 +577,7 @@ border-radius: 2px solid red;
     width: 106px;
     height: 60px;
     fill: var(--icon-color);
+    transition:fill 250ms cubic-bezier(0.4,0,0.2,1);
     
 }
 .link-clients {
@@ -674,17 +678,20 @@ text-align: center;
     align-items: center;
     border-radius: 50%;
     background-color: var(--icon-second-color);
-    transition-property: background-color;
-    transition-timing-function: linear;
-    transition-duration: 250ms;
+    transition:background-color 250ms cubic-bezier(0.4,0,0.2,1);
     
     
 }
+/* .icon-our-team {
+    fill: transparent;
+    transition:fill 250ms cubic-bezier(0.4,0,0.2,1);
+} */
 .link-team-footer:hover .icon-our-team,
 .link-team-footer:focus .icon-our-team {
  fill: var(--logo-second-color);
 }
-.link-team-footer:hover {
+.link-team-footer:hover,
+.link-team-footer:focus {
     background-color:var(--logo-first-color) ;
 }
 .conteiner .wight{
@@ -705,8 +712,10 @@ border-radius: 4px;
 display: block;
 padding: 10px 20px;
 border: 1px solid transparent;
+transition:background-color 250ms cubic-bezier(0.4,0,0.2,1);
 }
-.button-portfolio:hover {
+.button-portfolio:hover,
+.button-portfolio:focus {
     background-color: var(--logo-first-color);
 }
 .button-portfolio:focus {
@@ -770,6 +779,7 @@ justify-content: center;
     color: #000000;
     background-color: rgba(33, 149, 243, 0.9);
     color: var(--logo-second-color);
+    transition:background-color 250ms cubic-bezier(0.4,0,0.2,1);
 font-size: 18px;
 font-weight: 400;
 line-height: 28px;
@@ -778,6 +788,7 @@ text-align: left;
 }
 .portf-item:hover .thumb-text {
     opacity: 1;
+    
     
 }
 .portf-item:hover .info-portf {
