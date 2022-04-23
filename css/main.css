@@ -297,7 +297,21 @@ ul,li {
 .thoum {
     position: relative;
 } */
-
+.btn {
+    display: inline-flex;
+    padding: 10px 20px;
+    background-color: aqua;
+    color: beige;
+    cursor: pointer;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+}
+.btn:hover,
+.btn:focus {
+    background-color: brown;
+}
 
 .backdrop {
     position: fixed;
